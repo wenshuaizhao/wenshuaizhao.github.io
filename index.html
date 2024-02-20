@@ -22,14 +22,11 @@
                 <p class="name" style="text-align: center;">
                   Wenshuai Zhao
                 </p>
-                <p>I'm an Electrical Engineering PhD student at <a href="https://aalto.fi">Aalto University</a>, Finland. 
+                <p>I'm an Electrical Engineering PhD student at <a href="https://rl.aalto.fi">Aalto Robot Learning Lab</a>, Finland. 
                   I have always been fascinated by robots interacting with physical world, other robots and humans. 
-                  Motivated by this theme, I started from exploring reinforcement learning algorithms. Recently I am interested in imitation learning via diffusion models.
+                  Motivated by this theme, I started from exploring reinforcement learning algorithms. Recently I am interested in imitation learning for humanoid control via diffusion models.
                 </p>
-                <p>
-                  I'm fortunate to be advised by Professor <a href="https://rl.aalto.fi/team/">Joni Pajarinen</a>. 
-                  My research focus on multi-agent reinforcement learning and generative models.
-                </p>
+                
                 <!-- <p>
                   At Google I've worked on <a href="https://www.google.com/glass/start/">Glass</a>,  <a href="https://ai.googleblog.com/2014/04/lens-blur-in-new-google-camera-app.html">Lens Blur</a>, <a href="https://ai.googleblog.com/2014/10/hdr-low-light-and-high-dynamic-range.html">HDR+</a>, <a href="https://blog.google/products/google-ar-vr/introducing-next-generation-jump/">VR</a>, <a href="https://ai.googleblog.com/2017/10/portrait-mode-on-pixel-2-and-pixel-2-xl.html">Portrait Mode</a>, <a href="https://ai.googleblog.com/2020/12/portrait-light-enhancing-portrait.html">Portrait Light</a>, and <a href="https://blog.google/products/maps/three-maps-updates-io-2022/">Maps</a>. I did my PhD at <a href="http://www.eecs.berkeley.edu/">UC Berkeley</a>, where I was advised by <a href="http://www.cs.berkeley.edu/~malik/">Jitendra Malik</a>. I've received the <a href="https://www.thecvf.com/?page_id=413#YRA">PAMI Young Researcher Award</a>.
                 </p> -->
@@ -55,12 +52,24 @@
               <td style="padding:20px;width:100%;vertical-align:middle">
                 <h2>Research</h2>
                 <p>
-                  I have done several works on mutli-agent reinforcment learning, curriculum learning and multi robot collaboration. Representative papers are <span class="highlight">highlighted</span>.
+                  I have done several works on mutli-agent reinforcment learning, curriculum learning and model-based reinforcement learning. Representative papers are <span class="highlight">highlighted</span>.
                 </p>
               </td>
             </tr>
           </tbody></table>
 
+ <!-- The following is for the sections of research -->
+
+  <!-- SECTION 1 -->
+    
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr>
+            <td style="padding:20px;width:100%;vertical-align:middle">
+              <h3>Multi-agent Reinforcement Learning</h3>
+            </td>
+          </tr>
+        </tbody></table>
+      
     <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
     <tr onmouseout="camp_stop()" onmouseover="camp_start()">
@@ -103,53 +112,97 @@
         <a href="https://arxiv.org/pdf/2311.01953.pdf">arXiv</a>
         <p></p>
         <p>
-        In order to overcome the relative overgeneralization problem in multi agent learning, we propose to enable optimism in multi-agent policy gradient methods by reshaping advantages. 
-        This method is easy to implement and outperforms strong baselines on popular MARL benchmarks.
+        In order to overcome the relative overgeneralization problem in multi agent learning, we propose to enable optimism in multi-agent policy gradient methods by reshaping advantages.
         </p>
       </td>
     </tr>
 
-    <tr onmouseout="robustmarl_stop()" onmouseover="robustmarl_start()">
+
+    <tr onmouseout="bpta_stop()" onmouseover="bpta_start()">
       <td style="padding:20px;width:25%;vertical-align:middle">
         <div class="one">
-          <div class="two" id='robustmarl_image'><video  width=100% height=100% muted autoplay loop>
-          <source src="images/paper/robustmarl/real.mp4" type="video/mp4">
-          <!-- <source src="images/difsurvey_video.mp4" type="video/mp4"> -->
+          <div class="two" id='bpta_image'>
+            <video  width=100% height=100% muted autoplay loop>
+          <source src="images/paper/bpta/bpta.png" type="video/mp4">
           Your browser does not support the video tag.
           </video></div>
-          <img src='images/paper/robustmarl/render.gif' width="160">
+          <img src='images/paper/bpta/bpta.png' width="160">
         </div>
         <script type="text/javascript">
-          function robustmarl_start() {
-            document.getElementById('robustmarl_image').style.opacity = "1";
+          function bpta_start() {
+            document.getElementById('bpta_image').style.opacity = "1";
           }
 
-          function robustmarl_stop() {
-            document.getElementById('robustmarl_image').style.opacity = "0";
+          function bpta_stop() {
+            document.getElementById('bpta_image').style.opacity = "0";
           }
-          robustmarl_stop()
+          bpta_stop()
         </script>
       </td>
       <td style="padding:20px;width:75%;vertical-align:middle">
-        <a href="https://arxiv.org/pdf/2309.14792.pdf">
-          <span class="papertitle">Less Is More: Robust Robot Learning via Partially
-            Observable Multi-Agent Reinforcement Learning</span>
+        <a href="https://arxiv.org/pdf/2401.12574.pdf">
+          <span class="papertitle">Backpropagation Through Agents</span>
         </a>
         <br>
-        <strong>Wenshuai Zhao*</strong>,
-        Eetu-Aleksi Rantala*,
-        <a href="https://www.aalto.fi/fi/ihmiset/joni-pajarinen">Joni Pajarinen</a>,
-        Jorge Pena Queralta
+        Zhiyuan Li,
+        <strong>Wenshuai Zhao</strong>,
+        Lijun Wu,
+        <a href="https://www.aalto.fi/fi/ihmiset/joni-pajarinen">Joni Pajarinen</a>
+
         <br>
-        <em>arXiv</em>, 2023
+        <em>AAAI</em>, 2024
         <br>
-        <a href="https://github.com/TIERS/partially-observable-marl">code</a>
+        code
         /
-        <a href="https://arxiv.org/pdf/2309.14792.pdf">arXiv</a>
+        <a href="https://arxiv.org/pdf/2401.12574.pdf">arXiv</a>
         <p></p>
         <p>
-        Exploring partial observability in Multi-Agent Reinforcement Learning. Our experiments show that in many multi agent systems where agents are weakly coupled, partial observation can still enable optimal 
-        decision making. Moreover, in a mobile robot manipulator, we show partial observation of agents can improve robustness to agent failure.
+        We propose to backpropogate the gradients through action chains in auto-regressive based MARL methods.
+        </p>
+      </td>
+    </tr>
+
+
+    <tr onmouseout="bpta_stop()" onmouseover="bpta_start()">
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='agentmixer_image'>
+            <video  width=100% height=100% muted autoplay loop>
+          <source src="images/paper/agentmixer/agentmixer.png" type="video/mp4">
+          Your browser does not support the video tag.
+          </video></div>
+          <img src='images/paper/agentmixer/agentmixer.png' width="160">
+        </div>
+        <script type="text/javascript">
+          function bpta_start() {
+            document.getElementById('agentmixer_image').style.opacity = "1";
+          }
+
+          function bpta_stop() {
+            document.getElementById('agentmixer_image').style.opacity = "0";
+          }
+          bpta_stop()
+        </script>
+      </td>
+      <td style="padding:20px;width:75%;vertical-align:middle">
+        <a href="https://arxiv.org/pdf/2401.08728.pdf">
+          <span class="papertitle">AgentMixer: Multi-Agent Correlated Policy Factorization</span>
+        </a>
+        <br>
+        Zhiyuan Li,
+        <strong>Wenshuai Zhao</strong>,
+        Lijun Wu,
+        <a href="https://www.aalto.fi/fi/ihmiset/joni-pajarinen">Joni Pajarinen</a>
+
+        <br>
+        <em>arxiv</em>, 2024
+        <br>
+        code
+        /
+        <a href="https://arxiv.org/pdf/2401.08728.pdf">arXiv</a>
+        <p></p>
+        <p>
+        We propose multi-agent correlated policy factorization under CTDE, in order to overcome the asymmetric learning failure when naively distill individual policies from a joint policy.
         </p>
       </td>
     </tr>
@@ -179,14 +232,14 @@
       </td>
       <td style="padding:20px;width:75%;vertical-align:middle">
         <a href="https://arxiv.org/pdf/2205.10016.pdf">
-          <span class="papertitle">Self-Paced Multi-Agent Reinforcement Learning</span>
+          <span class="papertitle">Learning Progress Driven Multi-Agent Curriculum</span>
         </a>
         <br>
         <strong>Wenshuai Zhao</strong>,
         Zhiyuan Li,
         <a href="https://www.aalto.fi/fi/ihmiset/joni-pajarinen">Joni Pajarinen</a>
         <br>
-        <em>arXiv</em>, 2023
+        <em>arXiv</em>, 2024
         <br>
         <!-- <a href="https://github.com/TIERS/partially-observable-marl">code</a> -->
         code
@@ -195,155 +248,132 @@
         <p></p>
         <p>
         We show two flaws in existing reward based curriculum learning algorithms when generating number of agents as curriculum in MARL. 
-        Instead, we propose a learning progress metric as a new optimization objective which generates curriculum maximizing the learning progress of agents. 
-        Our method SPMARL outperforms baselines by a faster convergence and generating interpretable curriculum.
+        Instead, we propose a learning progress metric as a new optimization objective which generates curriculum maximizing the learning progress of agents.
         </p>
       </td>
     </tr>
+    </tbody></table>
 
+<!-- SECTION 2 -->
 
-    <!-- <tr onmouseout="difsurvey_stop()" onmouseover="difsurvey_start()">
-      <td style="padding:20px;width:25%;vertical-align:middle">
-        <div class="one">
-        <div class="two" id='difsurvey_image'><video  width=100% height=100% muted autoplay loop>
-        <source src="images/difsurvey_video.mp4" type="video/mp4">
+<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+  <tr>
+    <td style="padding:20px;width:100%;vertical-align:middle">
+      <h3>Robotics</h3>
+    </td>
+  </tr>
+</tbody></table>
+
+<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+  <tr onmouseout="robustmarl_stop()" onmouseover="robustmarl_start()">
+    <td style="padding:20px;width:25%;vertical-align:middle">
+      <div class="one">
+        <div class="two" id='robustmarl_image'><video  width=100% height=100% muted autoplay loop>
+        <source src="images/paper/robustmarl/real.mp4" type="video/mp4">
+        <!-- <source src="images/difsurvey_video.mp4" type="video/mp4"> -->
         Your browser does not support the video tag.
         </video></div>
-          <img src='images/difsurvey_image.jpg' width="160">
-        </div>
-        <script type="text/javascript">
-          function difsurvey_start() {
-            document.getElementById('difsurvey_image').style.opacity = "1";
-          }
+        <img src='images/paper/robustmarl/render.gif' width="160">
+      </div>
+      <script type="text/javascript">
+        function robustmarl_start() {
+          document.getElementById('robustmarl_image').style.opacity = "1";
+        }
 
-          function difsurvey_stop() {
-            document.getElementById('difsurvey_image').style.opacity = "0";
-          }
-          difsurvey_stop()
-        </script>
-      </td>
-      <td style="padding:20px;width:75%;vertical-align:middle">
-        <a href="https://arxiv.org/abs/2310.07204">
-          <span class="papertitle">State of the Art on Diffusion Models for Visual Computing
-    </span>
-        </a>
-        <br>
-      <a href="https://ryanpo.com/">Ryan Po</a>,
-      <a href="https://yifita.netlify.app/">Wang Yifan</a>,
-      <a href="https://people.mpi-inf.mpg.de/~golyanik/">Vladislav Golyanik</a>,
-      <a href="https://kfiraberman.github.io/">Kfir Aberman</a>,
-      <strong>Jonathan T. Barron</strong>,
-      <a href="https://www.cs.tau.ac.il/~amberman/">Amit H. Bermano</a>,
-      <a href="https://ericryanchan.github.io/">Eric Ryan Chan</a>,
-      <a href="https://www.weizmann.ac.il/math/dekel/home">Tali Dekel</a>,
-      <a href="https://holynski.org/">Aleksander Holynski</a>,
-      <a href="https://people.eecs.berkeley.edu/~kanazawa/">Angjoo Kanazawa</a>,
-      <a href="https://tml.stanford.edu/">C. Karen Liu</a>,
-      <a href="https://lingjie0206.github.io/">Lingjie Liu</a>,
-      <a href="https://bmild.github.io/">Ben Mildenhall</a>,
-        <a href="https://www.niessnerlab.org/">Matthias Nießner</a>,
-      <a href="https://ommer-lab.com/people/ommer/">Björn Ommer</a>,
-      <a href="https://people.mpi-inf.mpg.de/~theobalt/">Christian Theobalt</a>,
-      <a href="https://peterwonka.net/">Peter Wonka</a>,
-        <a href="https://stanford.edu/~gordonwz/">Gordon Wetzstein</a>
-        <br>
-      <em>arXiv<em>, 2023
-        <br>
-        <p></p>
-        <p>
-        A survey of recent progress in diffusion models for images, videos, and 3D.
-        </p>
-      </td>
-    </tr>          
+        function robustmarl_stop() {
+          document.getElementById('robustmarl_image').style.opacity = "0";
+        }
+        robustmarl_stop()
+      </script>
+    </td>
+    <td style="padding:20px;width:75%;vertical-align:middle">
+      <a href="https://arxiv.org/pdf/2309.14792.pdf">
+        <span class="papertitle">Less Is More: Robust Robot Learning via Partially
+          Observable Multi-Agent Reinforcement Learning</span>
+      </a>
+      <br>
+      <strong>Wenshuai Zhao*</strong>,
+      Eetu-Aleksi Rantala*,
+      <a href="https://www.aalto.fi/fi/ihmiset/joni-pajarinen">Joni Pajarinen</a>,
+      Jorge Pena Queralta
+      <br>
+      <em>arXiv</em>, 2023
+      <br>
+      <a href="https://github.com/TIERS/partially-observable-marl">code</a>
+      /
+      <a href="https://arxiv.org/pdf/2309.14792.pdf">arXiv</a>
+      <p></p>
+      <p>
+      We show that in many multi agent systems where agents are weakly coupled, partial observation can still enable near-optimal 
+      decision making. Moreover, in a mobile robot manipulator, we show partial observation of agents can improve robustness to agent failure.
+      </p>
+    </td>
+  </tr>
+  </tbody></table>
 
-    <tr onmouseout="camp_stop()" onmouseover="camp_start()">
-      <td style="padding:20px;width:25%;vertical-align:middle">
-        <div class="one">
-          <div class="two" id='camp_image'><video  width=100% height=100% muted autoplay loop>
-          <source src="images/camp.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-          </video></div>
-          <img src='images/camp.png' width="160">
-        </div>
-        <script type="text/javascript">
-          function camp_start() {
-            document.getElementById('camp_image').style.opacity = "1";
-          }
+    
 
-          function camp_stop() {
-            document.getElementById('camp_image').style.opacity = "0";
-          }
-          camp_stop()
-        </script>
-      </td>
-      <td style="padding:20px;width:75%;vertical-align:middle">
-        <a href="https://camp-nerf.github.io/">
-          <span class="papertitle">CamP: Camera Preconditioning for Neural Radiance Fields</span>
-        </a>
-        <br>
-        <a href="https://keunhong.com/">Keunhong Park</a>,
-        <a href="https://henzler.github.io/">Philipp Henzler</a>,
-        <a href="https://bmild.github.io/">Ben Mildenhall</a>,
-        <strong>Jonathan T. Barron</strong>,
-        <a href="http://www.ricardomartinbrualla.com/">Ricardo Martin-Brualla</a>
-        <br>
-        <em>SIGGRAPH Asia</em>, 2023
-        <br>
-        <a href="https://camp-nerf.github.io/">project page</a>
-        /
-        <a href="https://arxiv.org/abs/2308.10902">arXiv</a>
-        <p></p>
-        <p>
-        Preconditioning based on camera parameterization helps NeRF and camera extrinsics/intrinsics optimize better together.
-        </p>
-      </td>
-    </tr>
+ <!-- SECTION 3 -->
 
-    <tr onmouseout="zipnerf_stop()" onmouseover="zipnerf_start()"  bgcolor="#ffffd0">
-      <td style="padding:20px;width:25%;vertical-align:middle">
-        <div class="one">
-          <div class="two" id='zipnerf_image'><video  width=100% height=100% muted autoplay loop>
-          <source src="images/zipnerf.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-          </video></div>
-          <img src='images/zipnerf.jpg' width="160">
-        </div>
-        <script type="text/javascript">
-          function zipnerf_start() {
-            document.getElementById('zipnerf_image').style.opacity = "1";
-          }
+ <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+  <tr>
+    <td style="padding:20px;width:100%;vertical-align:middle">
+      <h3>Model-based Reinforcement Learning</h3>
+    </td>
+  </tr>
+</tbody></table>
 
-          function zipnerf_stop() {
-            document.getElementById('zipnerf_image').style.opacity = "0";
-          }
-          zipnerf_stop()
-        </script>
-      </td>
-      <td style="padding:20px;width:75%;vertical-align:middle">
-        <a href="http://jonbarron.info/zipnerf">
-          <span class="papertitle">Zip-NeRF: Anti-Aliased Grid-Based Neural Radiance Fields</span>
-        </a>
-        <br>
-        <strong>Jonathan T. Barron</strong>,
-        <a href="https://bmild.github.io/">Ben Mildenhall</a>,
-        <a href="https://scholar.harvard.edu/dorverbin/home">Dor Verbin</a>,
-        <a href="https://pratulsrinivasan.github.io/">Pratul Srinivasan</a>,
-        <a href="https://phogzone.com/">Peter Hedman</a>
-        <br>
-        <em>ICCV</em>, 2023 &nbsp <font color="red"><strong>(Oral Presentation, Best Paper Finalist)</strong></font>
-        <br>
-        <a href="http://jonbarron.info/zipnerf">project page</a>
-        /
-        <a href="https://www.youtube.com/watch?v=xrrhynRzC8k">video</a>
-        /
-        <a href="https://arxiv.org/abs/2304.06706">arXiv</a>
-        <p></p>
-        <p>
-        Combining mip-NeRF 360 and grid-based models like Instant NGP lets us reduce error rates by 8%&ndash;77% and accelerate training by 24x.
-        </p>
-      </td>
-    </tr> -->
-    <!-- </tbody></table> -->
+<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+  <tr onmouseout="currmarl_stop()" onmouseover="currmarl_start()">
+    <td style="padding:20px;width:25%;vertical-align:middle">
+      <div class="one">
+        <!-- <div class="two" id='currmarl_image'> -->
+          <!-- <video  width=100% height=100% muted autoplay loop> -->
+        <!-- <source src="images/paper/currmarl/real.mp4" type="video/mp4"> -->
+        <!-- <source src="images/difsurvey_video.mp4" type="video/mp4"> -->
+        <!-- Your browser does not support the video tag. -->
+        <!-- </video></div> -->
+        <img src='images/paper/tcrl/tcrl.png' width="160">
+      </div>
+      <script type="text/javascript">
+        function currmarl_start() {
+          document.getElementById('currmarl_image').style.opacity = "1";
+        }
+
+        function currmarl_stop() {
+          document.getElementById('currmarl_image').style.opacity = "0";
+        }
+        currmarl_stop()
+      </script>
+    </td>
+    <td style="padding:20px;width:75%;vertical-align:middle">
+      <a href="https://arxiv.org/pdf/2306.09466.pdf">
+        <span class="papertitle">Simplified Temporal Consistency Reinforcement Learning</span>
+      </a>
+      <br>
+      <a href="https://zhaoyi11.github.io/">Yi Zhao</a>,
+      <strong>Wenshuai Zhao</strong>,
+      Rinu Boney,
+      Juho Kannala
+      <a href="https://www.aalto.fi/fi/ihmiset/joni-pajarinen">Joni Pajarinen</a>
+      <br>
+      <em>ICML</em>, 2023
+      <br>
+      <!-- <a href="https://github.com/TIERS/partially-observable-marl">code</a> -->
+      code
+      /
+      <a href="https://arxiv.org/pdf/2306.09466.pdf">arXiv</a>
+      <p></p>
+      <p>
+      We propose a simple but effective model-based reinforcement learning algorithm relying only on a latent dynamics model trained
+      by latent temporal consistency.
+      </p>
+    </td>
+  </tr>
+  </tbody></table>
+
+
+      <!-- The follwing is for showing the visit map -->
 
     <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
       <tbody>
@@ -364,7 +394,7 @@
 
     
 
-          </tbody></table>
+          <!-- </tbody></table> -->
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr>
               <td style="padding:0px">
