@@ -75,6 +75,7 @@ a:hover {
 }
 
 body,
+
 td,
 th,
 tr,
@@ -146,4 +147,13 @@ h3 {
 
 span.highlight {
   background-color: #ffffd0;
+}
+
+hr {
+  border: none; /* Remove the default border */
+  border-top: 2px solid #ccc; /* Add a custom border */
+  margin: 0px 10; /* Space around the divider */
+  width: 95%; /* Custom width */
+  margin-left: auto; /* Center the divider */
+  margin-right: auto; /* Center the divider */
 }
