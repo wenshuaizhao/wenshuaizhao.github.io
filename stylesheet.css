@@ -129,6 +129,14 @@ h3 {
   height: 160px;
   position: relative;
 }
+.one video{
+  position: absolute; /* Position the video absolutely within the container */
+  top: 0;             /* Align the video to the top of the container */
+  left: 0;            /* Align the video to the left of the container */
+  width: 100%;        /* Stretch the video to cover the full width of the container */
+  height: 100%;       /* Stretch the video to cover the full height of the container */
+  object-fit: cover;  /* Ensure the video covers the container while preserving aspect ratio */
+}
 
 .two {
   width: 160px;
