@@ -115,6 +115,101 @@
             style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
             <tbody>
 
+              <tr onmouseout="currmarl_stop()" onmouseover="currmarl_start()" bgcolor="#ffffd0">
+                <td style="padding:0px 0px 20px 20px;width:25%;vertical-align:middle">
+                  <div class="one">
+                    <!-- <div class="two" id='currmarl_image'> -->
+                    <!-- <video  width=100% height=100% muted autoplay loop> -->
+                    <!-- <source src="images/paper/currmarl/real.mp4" type="video/mp4"> -->
+                    <!-- <source src="images/difsurvey_video.mp4" type="video/mp4"> -->
+                    <!-- Your browser does not support the video tag. -->
+                    <!-- </video></div> -->
+                    <img src='images/paper/currmarl/protoss.png' width=100% height=100%>
+                  </div>
+                  <script type="text/javascript">
+                    function currmarl_start() {
+                      document.getElementById('currmarl_image').style.opacity = "1";
+                    }
+
+                    function currmarl_stop() {
+                      document.getElementById('currmarl_image').style.opacity = "0";
+                    }
+                    currmarl_stop()
+                  </script>
+                </td>
+                <td style="padding:0px 0px 20px 20px;width:75%;vertical-align:middle">
+                  <a href="https://arxiv.org/pdf/2205.10016.pdf">
+                    <span class="papertitle">Learning Progress Driven Multi-Agent Curriculum</span>
+                  </a>
+                  <br>
+                  <strong>Wenshuai Zhao</strong>,
+                  <a href="https://lizhyun.github.io/">Zhiyuan Li</a>,
+                  <a href="https://www.aalto.fi/fi/ihmiset/joni-pajarinen">Joni Pajarinen</a>
+                  <br>
+                  <em>ICML</em>, 2025
+                  <br>
+                  <!-- <a href="https://github.com/TIERS/partially-observable-marl">code</a> -->
+                  <a href="https://wenshuaizhao.github.io/spmarl/">website</a>
+                  /
+                  <a href="https://github.com/wenshuaizhao/spmarl">code</a>
+                  /
+                  <a href="https://arxiv.org/pdf/2205.10016.pdf">arXiv</a>
+                  <p></p>
+                  <p>
+                    We show two flaws in existing reward based curriculum learning algorithms when generating number of
+                    agents as curriculum in MARL.
+                    Instead, we propose a learning progress metric as a new optimization objective which generates
+                    curriculum maximizing the learning progress of agents.
+                  </p>
+                </td>
+              </tr>
+
+              <tr onmouseout="bpta_stop()" onmouseover="bpta_start()">
+                <td style="padding:0px 0px 20px 20px;width:25%;vertical-align:middle">
+                  <div class="one">
+                    <div class="two" id='agentmixer_image'>
+                      <video width=100% height=100% muted autoplay loop>
+                        <source src="images/paper/agentmixer/agentmixer1.png" type="video/mp4">
+                        Your browser does not support the video tag.
+                      </video>
+                    </div>
+                    <img src='images/paper/agentmixer/agentmixer1.png' width=100% height=100%>
+                  </div>
+                  <script type="text/javascript">
+                    function bpta_start() {
+                      document.getElementById('agentmixer_image').style.opacity = "1";
+                    }
+
+                    function bpta_stop() {
+                      document.getElementById('agentmixer_image').style.opacity = "0";
+                    }
+                    bpta_stop()
+                  </script>
+                </td>
+                <td style="padding:0px 0px 20px 20px;width:75%;vertical-align:middle">
+                  <a href="https://arxiv.org/pdf/2401.08728.pdf">
+                    <span class="papertitle">AgentMixer: Multi-Agent Correlated Policy Factorization</span>
+                  </a>
+                  <br>
+                  <a href="https://lizhyun.github.io/">Zhiyuan Li</a>,
+                  <strong>Wenshuai Zhao</strong>,
+                  Lijun Wu,
+                  <a href="https://www.aalto.fi/fi/ihmiset/joni-pajarinen">Joni Pajarinen</a>
+
+                  <br>
+                  <em>AAAI</em>, 2025
+                  <br>
+                  code
+                  /
+                  <a href="https://arxiv.org/pdf/2401.08728.pdf">arXiv</a>
+                  <p></p>
+                  <p>
+                    We propose multi-agent correlated policy factorization under CTDE, in order to overcome the
+                    asymmetric learning failure when naively distill individual policies from a joint policy.
+                  </p>
+                </td>
+              </tr>
+
               <tr onmouseout="camp_stop()" onmouseover="camp_start()" bgcolor="#ffffd0">
                 <td style="padding:0px 0px 20px 20px;width:25%;vertical-align:middle">
                   <div class="one">
@@ -212,101 +307,10 @@
               </tr>
 
 
-              <tr onmouseout="bpta_stop()" onmouseover="bpta_start()">
-                <td style="padding:0px 0px 20px 20px;width:25%;vertical-align:middle">
-                  <div class="one">
-                    <div class="two" id='agentmixer_image'>
-                      <video width=100% height=100% muted autoplay loop>
-                        <source src="images/paper/agentmixer/agentmixer1.png" type="video/mp4">
-                        Your browser does not support the video tag.
-                      </video>
-                    </div>
-                    <img src='images/paper/agentmixer/agentmixer1.png' width=100% height=100%>
-                  </div>
-                  <script type="text/javascript">
-                    function bpta_start() {
-                      document.getElementById('agentmixer_image').style.opacity = "1";
-                    }
-
-                    function bpta_stop() {
-                      document.getElementById('agentmixer_image').style.opacity = "0";
-                    }
-                    bpta_stop()
-                  </script>
-                </td>
-                <td style="padding:0px 0px 20px 20px;width:75%;vertical-align:middle">
-                  <a href="https://arxiv.org/pdf/2401.08728.pdf">
-                    <span class="papertitle">AgentMixer: Multi-Agent Correlated Policy Factorization</span>
-                  </a>
-                  <br>
-                  <a href="https://lizhyun.github.io/">Zhiyuan Li</a>,
-                  <strong>Wenshuai Zhao</strong>,
-                  Lijun Wu,
-                  <a href="https://www.aalto.fi/fi/ihmiset/joni-pajarinen">Joni Pajarinen</a>
-
-                  <br>
-                  <em>AAAI</em>, 2025
-                  <br>
-                  code
-                  /
-                  <a href="https://arxiv.org/pdf/2401.08728.pdf">arXiv</a>
-                  <p></p>
-                  <p>
-                    We propose multi-agent correlated policy factorization under CTDE, in order to overcome the
-                    asymmetric learning failure when naively distill individual policies from a joint policy.
-                  </p>
-                </td>
-              </tr>
+              
 
 
-              <tr onmouseout="currmarl_stop()" onmouseover="currmarl_start()" bgcolor="#ffffd0">
-                <td style="padding:0px 0px 20px 20px;width:25%;vertical-align:middle">
-                  <div class="one">
-                    <!-- <div class="two" id='currmarl_image'> -->
-                    <!-- <video  width=100% height=100% muted autoplay loop> -->
-                    <!-- <source src="images/paper/currmarl/real.mp4" type="video/mp4"> -->
-                    <!-- <source src="images/difsurvey_video.mp4" type="video/mp4"> -->
-                    <!-- Your browser does not support the video tag. -->
-                    <!-- </video></div> -->
-                    <img src='images/paper/currmarl/protoss.png' width=100% height=100%>
-                  </div>
-                  <script type="text/javascript">
-                    function currmarl_start() {
-                      document.getElementById('currmarl_image').style.opacity = "1";
-                    }
-
-                    function currmarl_stop() {
-                      document.getElementById('currmarl_image').style.opacity = "0";
-                    }
-                    currmarl_stop()
-                  </script>
-                </td>
-                <td style="padding:0px 0px 20px 20px;width:75%;vertical-align:middle">
-                  <a href="https://arxiv.org/pdf/2205.10016.pdf">
-                    <span class="papertitle">Learning Progress Driven Multi-Agent Curriculum</span>
-                  </a>
-                  <br>
-                  <strong>Wenshuai Zhao</strong>,
-                  <a href="https://lizhyun.github.io/">Zhiyuan Li</a>,
-                  <a href="https://www.aalto.fi/fi/ihmiset/joni-pajarinen">Joni Pajarinen</a>
-                  <br>
-                  <em>ICML</em>, 2025
-                  <br>
-                  <!-- <a href="https://github.com/TIERS/partially-observable-marl">code</a> -->
-                  <a href="https://wenshuaizhao.github.io/spmarl/">website</a>
-                  /
-                  <a href="https://github.com/wenshuaizhao/spmarl">code</a>
-                  /
-                  <a href="https://arxiv.org/pdf/2205.10016.pdf">arXiv</a>
-                  <p></p>
-                  <p>
-                    We show two flaws in existing reward based curriculum learning algorithms when generating number of
-                    agents as curriculum in MARL.
-                    Instead, we propose a learning progress metric as a new optimization objective which generates
-                    curriculum maximizing the learning progress of agents.
-                  </p>
-                </td>
-              </tr>
+              
             </tbody>
           </table>
 
@@ -361,7 +365,7 @@
                   <br>
                   <a href="https://sites.google.com/view/bmi-corl2024">website</a>
                   /
-                  code
+                  <a href="https://github.com/wenshuaizhao/bmi">code</a>
                   /
                   <a href="https://arxiv.org/pdf/2410.01968">arXiv</a>
                   <p></p>
@@ -402,6 +406,8 @@
                   <br>
                   <strong>Wenshuai Zhao*</strong>,
                   Eetu-Aleksi Rantala*,
+                  Sahar Salimpour,
+                  <a href="https://lizhyun.github.io/">Zhiyuan Li</a>,
                   <a href="https://www.aalto.fi/fi/ihmiset/joni-pajarinen">Joni Pajarinen</a>,
                   Jorge Pena Queralta
                   <br>
