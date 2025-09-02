@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Posts on Wenshuai Blog</title>
+    <link>https://wenshuaizhao.github.io/blog/posts/</link>
+    <description>Recent content in Posts on Wenshuai Blog</description>
+    <image>
+      <title>Wenshuai Blog</title>
+      <url>https://wenshuaizhao.github.io/blog/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://wenshuaizhao.github.io/blog/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- 0.149.0</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 02 Sep 2025 12:33:11 +0300</lastBuildDate>
+    <atom:link href="https://wenshuaizhao.github.io/blog/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Video Generation: Current Situation</title>
+      <link>https://wenshuaizhao.github.io/blog/posts/video_generation/</link>
+      <pubDate>Tue, 02 Sep 2025 12:33:11 +0300</pubDate>
+      <guid>https://wenshuaizhao.github.io/blog/posts/video_generation/</guid>
+      <description>&lt;h2 id=&#34;how-video-generation-work&#34;&gt;How video generation work&lt;/h2&gt;</description>
+    </item>
+    <item>
+      <title>Video VAE: Methods and Problems</title>
+      <link>https://wenshuaizhao.github.io/blog/posts/video_vae/</link>
+      <pubDate>Tue, 02 Sep 2025 12:30:43 +0300</pubDate>
+      <guid>https://wenshuaizhao.github.io/blog/posts/video_vae/</guid>
+      <description>&lt;h2 id=&#34;existing-video-vaes&#34;&gt;Existing Video VAEs&lt;/h2&gt;</description>
+    </item>
+    <item>
+      <title>Flow Matching: Method, Variants and Problems</title>
+      <link>https://wenshuaizhao.github.io/blog/posts/flow_matching/</link>
+      <pubDate>Tue, 02 Sep 2025 12:19:14 +0300</pubDate>
+      <guid>https://wenshuaizhao.github.io/blog/posts/flow_matching/</guid>
+      <description>Desc Text.</description>
+    </item>
+  </channel>
+</rss>

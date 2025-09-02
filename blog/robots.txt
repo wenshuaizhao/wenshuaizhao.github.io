@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://wenshuaizhao.github.io/blog/sitemap.xml
