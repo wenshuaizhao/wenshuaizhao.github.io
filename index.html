@@ -15,7 +15,7 @@
 
 <body>
   <table
-    style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+    style="width:100%;max-width:1000px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
     <tbody>
       <tr style="padding:0px">
         <td style="padding:0px">
@@ -56,9 +56,7 @@
                   </p>
                   <p style="text-align:center; margin-top: 5px;">
                     <!-- <a href="mailto:wenshuai.zhao@aalto.fi">Email</a> &nbsp;/&nbsp; -->
-                    <!-- <a href="data/JonBarron-CV.pdf">CV</a> &nbsp;/&nbsp; -->
-                    <!-- <a href="data/JonBarron-bio.txt">Bio</a> &nbsp;/&nbsp; -->
-                    <a
+<a
                       href="https://scholar.google.com/citations?hl=en&user=cuNOys8AAAAJ&view_op=list_works&sortby=pubdate">Scholar</a>
                     &nbsp;/&nbsp;
                     <!-- <a href="https://www.threads.net/@jonbarron">Threads</a> &nbsp;/&nbsp; -->
@@ -85,14 +83,12 @@
             <tbody>
               <tr>
                 <td style="padding:0px 0px 20px 20px;width:100%;vertical-align:middle">
-                  <h2>Selected Publications</h2>
+                  <h2 style="display:inline;">Selected Publications</h2>
+                  <span style="font-size:small;">&nbsp;&nbsp; * Equal contribution &nbsp;&nbsp; &dagger; Corresponding author</span>
                   <p>
-                    I have done several projects on imitation learning, mutli-agent reinforcment learning, curriculum
-                    learning and model-based reinforcement learning.
-                    Representative papers are <span class="highlight">highlighted</span>. Please check my <a
-                      href="https://scholar.google.com/citations?hl=en&user=cuNOys8AAAAJ&view_op=list_works&sortby=pubdate">Google
-                      Scholar</a> for more details.
+                    I have done several projects on generative modeling, reinforcement learning, imitation learning, and curriculum learning. Representative papers are <span class="highlight">highlighted</span>. Please check my <a href="https://scholar.google.com/citations?hl=en&user=cuNOys8AAAAJ&view_op=list_works&sortby=pubdate">Google Scholar</a> for more details.
                   </p>
+                  <p>[<a href="#generative-modeling">Generative Modeling</a> | <a href="#marl">Multi-agent RL</a> | <a href="#robot-learning">Robot Learning</a> | <a href="#model-based-rl">Model-based RL</a>]</p>
                 </td>
               </tr>
             </tbody>
@@ -107,7 +103,132 @@
             <tbody>
               <tr>
                 <td style="padding:0px 0px 20px 20px;width:100%;vertical-align:middle">
-                  <h3>Multi-agent Reinforcement Learning</h3>
+                  <h3 id="generative-modeling">Generative Modeling</h3>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <table
+            style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+            <tbody>
+              <tr onmouseout="sparsediff_stop()" onmouseover="sparsediff_start()" bgcolor="#ffffd0">
+                <td style="padding:0px 0px 20px 20px;width:25%;vertical-align:middle">
+                  <div class="one">
+                    <div class="two" id='sparsediff_image'>
+                      <img id='sparsediff_slide' src='images/paper/ssd/sampled_images/sample_00.png' width=100% height=100% style="object-fit:cover;">
+                    </div>
+                    <img src='images/paper/ssd/sample_16875909_0.png' width=100% height=100%>
+                  </div>
+                  <script type="text/javascript">
+                    var sparsediff_imgs = [
+                      'images/paper/ssd/sampled_images/sample_00.png',
+                      'images/paper/ssd/sampled_images/sample_098.png',
+                      'images/paper/ssd/sampled_images/sample_16847421_080.png',
+                      'images/paper/ssd/sampled_images/sample_16847422_0.png',
+                      'images/paper/ssd/sampled_images/sample_16875909_0.png',
+                      'images/paper/ssd/sampled_images/sample_16875909_1.png',
+                      'images/paper/ssd/sampled_images/sample_16875909_2.png'
+                    ];
+                    var sparsediff_idx = 0;
+                    var sparsediff_timer = null;
+                    function sparsediff_start() {
+                      document.getElementById('sparsediff_image').style.opacity = "1";
+                      sparsediff_timer = setInterval(function() {
+                        sparsediff_idx = (sparsediff_idx + 1) % sparsediff_imgs.length;
+                        document.getElementById('sparsediff_slide').src = sparsediff_imgs[sparsediff_idx];
+                      }, 600);
+                    }
+                    function sparsediff_stop() {
+                      document.getElementById('sparsediff_image').style.opacity = "0";
+                      clearInterval(sparsediff_timer);
+                      sparsediff_idx = 0;
+                    }
+                    sparsediff_stop()
+                  </script>
+                </td>
+                <td style="padding:0px 0px 20px 20px;width:75%;vertical-align:middle">
+                  <a href="PLACEHOLDER_ARXIV_URL">
+                    <span class="papertitle">Sparsely Supervised Diffusion</span>
+                  </a>
+                  <br>
+                  <strong>Wenshuai Zhao</strong>,
+                  <a href="https://lizhyun.github.io/">Zhiyuan Li</a>,
+                  <a href="https://zhaoyi11.github.io/homepage/">Yi Zhao</a>,
+                  Mohammad Hassan Vali,
+                  Martin Trapp,
+                  <a href="https://www.aalto.fi/fi/ihmiset/joni-pajarinen">Joni Pajarinen</a>,
+                  <a href="https://users.aalto.fi/~kannalj1/">Juho Kannala</a>,
+                  <a href="https://users.aalto.fi/~asolin/">Arno Solin</a>
+                  <br>
+                  <em>arXiv</em>, 2026
+                  <br>
+                  <a href="https://sites.google.com/view/sparsely-supervised-diffusion/home">website</a>
+                  /
+                  <a href="PLACEHOLDER_CODE_URL">code</a>
+                  /
+                  <a href="https://arxiv.org/pdf/2602.02699">arXiv</a>
+                  <p></p>
+                  <p>
+                    Diffusion models often suffer from generating spatially inconsistent images. Instead of enforcing heuristics of physics or geometry prior knowledge to the generation process, we propose sparsely supervised diffusion, a principled method to mitigate this problem by compressing excessive correlation brought by limited data samples. The method is simple yet effective and can be implemented in several lines of code.
+                  </p>
+                </td>
+              </tr>
+
+              <tr onmouseout="lcvae_stop()" onmouseover="lcvae_start()" bgcolor="#ffffd0">
+                <td style="padding:0px 0px 20px 20px;width:25%;vertical-align:middle">
+                  <div class="one">
+                    <div class="two" id='lcvae_image'>
+                      <img src='images/paper/lcvae/sky.png' width=100% height=100% style="object-fit:cover;">
+                    </div>
+                    <img src='images/paper/lcvae/sky.png' width=100% height=100%>
+                  </div>
+                  <script type="text/javascript">
+                    function lcvae_start() {
+                      document.getElementById('lcvae_image').style.opacity = "1";
+                    }
+                    function lcvae_stop() {
+                      document.getElementById('lcvae_image').style.opacity = "0";
+                    }
+                    lcvae_stop()
+                  </script>
+                </td>
+                <td style="padding:0px 0px 20px 20px;width:75%;vertical-align:middle">
+                  <a href="PLACEHOLDER_ARXIV_URL">
+                    <span class="papertitle">Latent-Compressed Variational Autoencoder for Video Diffusion Models</span>
+                  </a>
+                  <br>
+                  Jiarui Guan,
+                  <strong>Wenshuai Zhao</strong>&dagger;,
+                  Zhengtao Zou,
+                  <a href="https://users.aalto.fi/~kannalj1/">Juho Kannala</a>,
+                  <a href="https://users.aalto.fi/~asolin/">Arno Solin</a>
+                  <br>
+                  <em>CVPR Findings</em>, 2026
+                  <br>
+                  <a href="PLACEHOLDER_WEBSITE_URL">website</a>
+                  /
+                  <a href="PLACEHOLDER_CODE_URL">code</a>
+                  /
+                  <a href="PLACEHOLDER_ARXIV_URL">arXiv</a>
+                  <p></p>
+                  <p>
+                    Video generation is usually performed in a well structured latent space given by VAE. We propose a latent compressed VAE to remove the high-frequency components of video latent while offloading the high-frequency reconstruction to the decoder. In this way, the VAE encodes the video into diffusion friendly latent and improves the video generation quality.
+                  </p>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+
+          <!-- SECTION 2 -->
+
+          <table
+            style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+            <tbody>
+              <tr>
+                <td style="padding:0px 0px 20px 20px;width:100%;vertical-align:middle">
+                  <h3 id="marl">Multi-agent Reinforcement Learning</h3>
                 </td>
               </tr>
             </tbody>
@@ -242,7 +363,7 @@
                   <strong>Wenshuai Zhao</strong>,
                   <a href="https://zhaoyi11.github.io/homepage/">Yi Zhao</a>,
                   <a href="https://lizhyun.github.io/">Zhiyuan Li</a>,
-                  Juho Kannala,
+                  <a href="https://users.aalto.fi/~kannalj1/">Juho Kannala</a>,
                   <a href="https://www.aalto.fi/fi/ihmiset/joni-pajarinen">Joni Pajarinen</a>
 
                   <br>
@@ -323,7 +444,7 @@
             <tbody>
               <tr>
                 <td style="padding:0px 0px 20px 20px;width:100%;vertical-align:middle">
-                  <h3>Robot Learning</h3>
+                  <h3 id="robot-learning">Robot Learning</h3>
                 </td>
               </tr>
             </tbody>
@@ -439,7 +560,7 @@
             <tbody>
               <tr>
                 <td style="padding:0px 0px 20px 20px;width:100%;vertical-align:middle">
-                  <h3>Model-based Reinforcement Learning</h3>
+                  <h3 id="model-based-rl">Model-based Reinforcement Learning</h3>
                 </td>
               </tr>
             </tbody>
@@ -448,6 +569,54 @@
           <table
             style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
             <tbody>
+              <tr onmouseout="guidewm_stop()" onmouseover="guidewm_start()">
+                <td style="padding:0px 0px 20px 20px;width:25%;vertical-align:middle">
+                  <div class="one">
+                    <div class="two" id='guidewm_image'>
+                      <img src='images/paper/ncrl/task.png' width=100% height=100% style="object-fit:cover;">
+                    </div>
+                    <img src='images/paper/ncrl/task.png' width=100% height=100%>
+                  </div>
+                  <script type="text/javascript">
+                    function guidewm_start() {
+                      document.getElementById('guidewm_image').style.opacity = "1";
+                    }
+                    function guidewm_stop() {
+                      document.getElementById('guidewm_image').style.opacity = "0";
+                    }
+                    guidewm_stop()
+                  </script>
+                </td>
+                <td style="padding:0px 0px 20px 20px;width:75%;vertical-align:middle">
+                  <a href="PLACEHOLDER_PAPER_URL">
+                    <span class="papertitle">Efficient Reinforcement Learning by Guiding World Models with Non-Curated Data</span>
+                  </a>
+                  <br>
+                  <a href="https://zhaoyi11.github.io/homepage/">Yi Zhao</a>,
+                  Aidan Scannell,
+                  <strong>Wenshuai Zhao</strong>,
+                  Yuxin Hou,
+                  Tianyu Cui,
+                  Le Chen,
+                  Dieter Büchler,
+                  <a href="https://users.aalto.fi/~asolin/">Arno Solin</a>,
+                  <a href="https://users.aalto.fi/~kannalj1/">Juho Kannala</a>,
+                  <a href="https://www.aalto.fi/fi/ihmiset/joni-pajarinen">Joni Pajarinen</a>
+                  <br>
+                  <em>ICLR</em>, 2026
+                  <br>
+                  <a href="PLACEHOLDER_WEBSITE_URL">website</a>
+                  /
+                  <a href="PLACEHOLDER_CODE_URL">code</a>
+                  /
+                  <a href="https://openreview.net/pdf?id=oBXfPyi47m">paper</a>
+                  <p></p>
+                  <p>
+                    We propose two practical techniques to enable efficient offline-to-online RL using non-curated robot data.
+                  </p>
+                </td>
+              </tr>
+
               <tr onmouseout="currmarl_stop()" onmouseover="currmarl_start()">
                 <td style="padding:0px 0px 20px 20px;width:25%;vertical-align:middle">
                   <div class="one">
@@ -478,13 +647,12 @@
                   <a href="https://zhaoyi11.github.io/homepage/">Yi Zhao</a>,
                   <strong>Wenshuai Zhao</strong>,
                   Rinu Boney,
-                  Juho Kannala,
+                  <a href="https://users.aalto.fi/~kannalj1/">Juho Kannala</a>,
                   <a href="https://www.aalto.fi/fi/ihmiset/joni-pajarinen">Joni Pajarinen</a>
                   <br>
                   <em>ICML</em>, 2023
                   <br>
                   <a href="https://github.com/zhaoyi11/tcrl">code</a>
-                  <!-- code -->
                   /
                   <a href="https://arxiv.org/pdf/2306.09466.pdf">arXiv</a>
                   <p></p>
