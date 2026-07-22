@@ -163,11 +163,12 @@ span.highlight {
   vertical-align: middle;
   white-space: nowrap;
 }
-.tag-gen   { background:#efe7fb; border-color:#8a5cd1; color:#5f3aa8; } /* Generative Modeling */
+.tag-gen   { background:#efe7fb; border-color:#8a5cd1; color:#5f3aa8; } /* Diffusion Models */
 .tag-marl  { background:#e3ecfb; border-color:#4a78c8; color:#2f5aa8; } /* Multi-Agent RL */
 .tag-mbrl  { background:#dcf0ee; border-color:#3fa39c; color:#2a7f78; } /* Model-based RL */
 .tag-wm    { background:#eef0dd; border-color:#9a9a3f; color:#767628; } /* World Models */
-.tag-robot { background:#fdecdd; border-color:#d98a3f; color:#b3672c; } /* Robot Learning */
+.tag-wam   { background:#fdecdd; border-color:#d98a3f; color:#b3672c; } /* WAM (World-Action Models) */
+.tag-vla   { background:#fbe4f1; border-color:#c14d92; color:#a2367a; } /* VLA Models */
 .tag-il    { background:#fbe3e3; border-color:#cf4a4a; color:#a83030; } /* Imitation Learning */
 .tag-rep   { background:#f0e7df; border-color:#a5794f; color:#82602f; } /* Representation Learning */
 .tag-curr  { background:#e2f3e2; border-color:#4ca34c; color:#2f802f; } /* Curriculum Learning */
