@@ -176,6 +176,77 @@
                 </td>
               </tr>
 
+              <!-- Point Tracking Improves World Action Models (RWM Workshop @ RSS, 2026) -->
+              <tr onmouseout="jopat_stop()" onmouseover="jopat_start()">
+                <td style="padding:4px 0px 4px 20px;width:25%;vertical-align:middle">
+                  <div class="one">
+                    <video id="jopat_a" autoplay loop muted playsinline src="images/paper/jopat/jopat_0.mp4" style="opacity:1; transition:opacity .4s ease-in-out;"></video>
+                    <video id="jopat_b" loop muted playsinline style="opacity:0; transition:opacity .4s ease-in-out;"></video>
+                  </div>
+                  <script type="text/javascript">
+                    var jopat_vids = [
+                      'images/paper/jopat/jopat_0.mp4',
+                      'images/paper/jopat/jopat_1.mp4',
+                      'images/paper/jopat/jopat_2.mp4'
+                    ];
+                    var jopat_cur = 0;          // index currently shown
+                    var jopat_front = 'jopat_a'; // element id currently visible
+                    var jopat_timer = null;
+                    // Preload the next clip into the hidden element, crossfade only once ready.
+                    function jopat_show(nextIdx) {
+                      if (nextIdx === jopat_cur) return;
+                      var frontEl = document.getElementById(jopat_front);
+                      var backId = (jopat_front === 'jopat_a') ? 'jopat_b' : 'jopat_a';
+                      var backEl = document.getElementById(backId);
+                      var onready = function() {
+                        backEl.removeEventListener('canplay', onready);
+                        try { backEl.currentTime = 0; } catch (e) {}
+                        backEl.play();
+                        backEl.style.opacity = '1';
+                        frontEl.style.opacity = '0';
+                        jopat_front = backId;
+                        jopat_cur = nextIdx;
+                      };
+                      backEl.addEventListener('canplay', onready);
+                      backEl.src = jopat_vids[nextIdx];
+                      backEl.load();
+                    }
+                    function jopat_start() {
+                      clearInterval(jopat_timer);
+                      jopat_timer = setInterval(function() {
+                        jopat_show((jopat_cur + 1) % jopat_vids.length);
+                      }, 4000);
+                    }
+                    function jopat_stop() {
+                      clearInterval(jopat_timer);
+                      jopat_show(0);
+                    }
+                  </script>
+                </td>
+                <td style="padding:4px 0px 4px 20px;width:75%;vertical-align:middle">
+                  <a href="PLACEHOLDER_PAPER_URL">
+                    <span class="papertitle">Point Tracking Improves World Action Models</span>
+                  </a>
+                  <br>
+                  Jiarui Guan,
+                  <strong>Wenshuai Zhao</strong>&dagger;,
+                  Yue Pei,
+                  Ziliang Chen,
+                  <a href="https://users.aalto.fi/~asolin/">Arno Solin</a>,
+                  <a href="https://users.aalto.fi/~kannalj1/">Juho Kannala</a>
+                  <br>
+                  <em>RWM Workshop @ RSS</em>, 2026 (Oral)
+                  <br>
+                  <span class="tag tag-robot">Robot Learning</span><span class="tag tag-wm">World Models</span><span class="tag tag-rep">Representation Learning</span>
+                  <br>
+                  website / code / paper
+                  <p></p>
+                  <p>
+                    We propose JOPAT, a joint pixel-and-track world-action model that predicts latent visual observations, 2D point tracks with visibility, and actions within a single denoising diffusion transformer. Point tracks provide an explicit, occlusion-robust representation of motion that captures long-horizon dynamics beyond pixel appearance. On LIBERO and real-world LeRobot tasks, JOPAT improves over pixel-based baselines, with the largest gains on long-horizon tasks involving occlusion, object interaction, and off-screen motion.
+                  </p>
+                </td>
+              </tr>
+
               <!-- 2. Post-Training Vision-Language-Action Models to Attend Less (RSS Diff4RL Workshop 2026) -->
               <tr onmouseout="savla_stop()" onmouseover="savla_start()">
                 <td style="padding:4px 0px 4px 20px;width:25%;vertical-align:middle">
@@ -235,7 +306,7 @@
                   website / code / paper
                   <p></p>
                   <p>
-                    We post-train Vision&ndash;Language&ndash;Action (VLA) models with a sparse cross-attention module that prunes over 99% of attention edges to vision&ndash;language tokens. By restricting the action head to task-relevant tokens, sparse attention acts as a regularizer that improves generalization, reaching state-of-the-art performance on unseen tasks in simulation (RoboCasa365 with GR00T N1.5) and on a real Franka robot across three manipulation tasks.
+                    We post-train VLA models with a sparse cross-attention module that prunes over 99% of attention edges to vision&ndash;language tokens. By restricting the action head to task-relevant tokens, sparse attention acts as a regularizer that improves generalization.
                   </p>
                 </td>
               </tr>
