@@ -176,7 +176,75 @@
                 </td>
               </tr>
 
-              <!-- 2. Latent-Compressed VAE for Video Diffusion Models (CVPR Findings 2026) -->
+              <!-- 2. Post-Training Vision-Language-Action Models to Attend Less (RSS Diff4RL Workshop 2026) -->
+              <tr onmouseout="savla_stop()" onmouseover="savla_start()">
+                <td style="padding:4px 0px 4px 20px;width:25%;vertical-align:middle">
+                  <div class="one">
+                    <div class="two" id='savla_image'>
+                      <img id='savla_slide' src='images/paper/savla/savla_00.png' width=100% height=100% style="object-fit:cover;">
+                    </div>
+                    <img src='images/paper/savla/savla_static.png' width=100% height=100% style="object-fit:cover;">
+                  </div>
+                  <script type="text/javascript">
+                    var savla_imgs = [
+                      'images/paper/savla/savla_00.png',
+                      'images/paper/savla/savla_01.png',
+                      'images/paper/savla/savla_02.png',
+                      'images/paper/savla/savla_03.png',
+                      'images/paper/savla/savla_04.png',
+                      'images/paper/savla/savla_05.png',
+                      'images/paper/savla/savla_06.png',
+                      'images/paper/savla/savla_07.png',
+                      'images/paper/savla/savla_08.png',
+                      'images/paper/savla/savla_09.png',
+                      'images/paper/savla/savla_10.png',
+                      'images/paper/savla/savla_11.png',
+                      'images/paper/savla/savla_12.png',
+                      'images/paper/savla/savla_13.png',
+                      'images/paper/savla/savla_14.png',
+                      'images/paper/savla/savla_15.png'
+                    ];
+                    var savla_idx = 0;
+                    var savla_timer = null;
+                    function savla_start() {
+                      document.getElementById('savla_image').style.opacity = "1";
+                      savla_timer = setInterval(function() {
+                        savla_idx = (savla_idx + 1) % savla_imgs.length;
+                        document.getElementById('savla_slide').src = savla_imgs[savla_idx];
+                      }, 500);
+                    }
+                    function savla_stop() {
+                      document.getElementById('savla_image').style.opacity = "0";
+                      clearInterval(savla_timer);
+                      savla_idx = 0;
+                    }
+                    savla_stop()
+                  </script>
+                </td>
+                <td style="padding:4px 0px 4px 20px;width:75%;vertical-align:middle">
+                  <a href="PLACEHOLDER_PAPER_URL">
+                    <span class="papertitle">Post-Training Vision&ndash;Language&ndash;Action Models to Attend Less</span>
+                  </a>
+                  <br>
+                  <strong>Wenshuai Zhao</strong>,
+                  Yuying Zhang,
+                  Yihao Wang,
+                  <a href="https://users.aalto.fi/~kannalj1/">Juho Kannala</a>,
+                  <a href="https://users.aalto.fi/~asolin/">Arno Solin</a>
+                  <br>
+                  <em>Diff4RL Workshop @ RSS</em>, 2026
+                  <br>
+                  <span class="tag tag-robot">Robot Learning</span><span class="tag tag-rep">Representation Learning</span>
+                  <br>
+                  website / code / paper
+                  <p></p>
+                  <p>
+                    We post-train Vision&ndash;Language&ndash;Action (VLA) models with a sparse cross-attention module that prunes over 99% of attention edges to vision&ndash;language tokens. By restricting the action head to task-relevant tokens, sparse attention acts as a regularizer that improves generalization, reaching state-of-the-art performance on unseen tasks in simulation (RoboCasa365 with GR00T N1.5) and on a real Franka robot across three manipulation tasks.
+                  </p>
+                </td>
+              </tr>
+
+              <!-- 3. Latent-Compressed VAE for Video Diffusion Models (CVPR Findings 2026) -->
               <tr onmouseout="lcvae_stop()" onmouseover="lcvae_start()" bgcolor="#ffffd0">
                 <td style="padding:4px 0px 4px 20px;width:25%;vertical-align:middle">
                   <div class="one">
