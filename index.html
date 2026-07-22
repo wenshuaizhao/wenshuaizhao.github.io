@@ -27,9 +27,9 @@
                   <p class="name" style="text-align: center;">
                     Wenshuai Zhao
                   </p>
-                  <!-- <p>I'm an Electrical Engineering PhD student at <a href="https://rl.aalto.fi">Aalto Robot Learning Lab</a>, Finland. 
-                  I have always been fascinated by robots interacting with physical world, other robots and humans. 
-                  Motivated by this theme, I started from exploring reinforcement learning algorithms. Recently I am interested in imitation learning for humanoid robots 
+                  <!-- <p>I'm an Electrical Engineering PhD student at <a href="https://rl.aalto.fi">Aalto Robot Learning Lab</a>, Finland.
+                  I have always been fascinated by robots interacting with physical world, other robots and humans.
+                  Motivated by this theme, I started from exploring reinforcement learning algorithms. Recently I am interested in imitation learning for humanoid robots
                   and learning dynamics model from human videos. -->
 
                   <!-- I'm a PhD student in Electrical Engineering at the <a href="https://rl.aalto.fi">Aalto Robot Learning
@@ -39,7 +39,7 @@
                   I am also interested in robot perception, including 3D scene understanding and physics-based dynamics
                   modeling. -->
 
-                  I am a postdoctoral researcher in the Department of Computer Science at Aalto University, Finland. 
+                  I am a postdoctoral researcher in the Department of Computer Science at Aalto University, Finland.
                   I am supervised by <a href="https://users.aalto.fi/~kannalj1/">Prof. Juho Kannala</a> and <a href="https://users.aalto.fi/~asolin/group/">Prof. Arno Solin</a>.
                   My PhD research, supervised by <a href="https://rl.aalto.fi"> Prof. Joni Pajarinen</a>, focused on reinforcement learning, imitation learning, and their applications in robotics and general decision-making.
                   Currently, my research interests include robot perception, particularly 3D scene understanding and physics-based dynamics modeling.
@@ -86,32 +86,30 @@
                   <h2 style="display:inline;">Selected Publications</h2>
                   <span style="font-size:small;">&nbsp;&nbsp; * Equal contribution &nbsp;&nbsp; &dagger; Corresponding author</span>
                   <p>
-                    I have done several projects on generative modeling, reinforcement learning, imitation learning, and curriculum learning. Representative papers are <span class="highlight">highlighted</span>. Please check my <a href="https://scholar.google.com/citations?hl=en&user=cuNOys8AAAAJ&view_op=list_works&sortby=pubdate">Google Scholar</a> for more details.
+                    I have done several projects on generative modeling, reinforcement learning, imitation learning, and curriculum learning. Papers are listed in reverse chronological order and tagged by topic; representative papers are <span class="highlight">highlighted</span>. Please check my <a href="https://scholar.google.com/citations?hl=en&user=cuNOys8AAAAJ&view_op=list_works&sortby=pubdate">Google Scholar</a> for more details.
                   </p>
-                  <p>[<a href="#generative-modeling">Generative Modeling</a> | <a href="#marl">Multi-agent RL</a> | <a href="#robot-learning">Robot Learning</a> | <a href="#model-based-rl">Model-based RL</a>]</p>
+                  <p style="line-height: 2;">
+                    <span class="tag tag-gen">Generative Modeling</span>
+                    <span class="tag tag-marl">Multi-Agent RL</span>
+                    <span class="tag tag-mbrl">Model-based RL</span>
+                    <span class="tag tag-wm">World Models</span>
+                    <span class="tag tag-robot">Robot Learning</span>
+                    <span class="tag tag-il">Imitation Learning</span>
+                    <span class="tag tag-rep">Representation Learning</span>
+                    <span class="tag tag-curr">Curriculum Learning</span>
+                  </p>
                 </td>
               </tr>
             </tbody>
           </table>
 
-          <!-- The following is for the sections of research -->
-
-          <!-- SECTION 1 -->
+          <!-- The following is the single, reverse-chronological publication list -->
 
           <table
             style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
             <tbody>
-              <tr>
-                <td style="padding:0px 0px 20px 20px;width:100%;vertical-align:middle">
-                  <h3 id="generative-modeling">Generative Modeling</h3>
-                </td>
-              </tr>
-            </tbody>
-          </table>
 
-          <table
-            style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-            <tbody>
+              <!-- 1. Sparsely Supervised Diffusion (arXiv 2026) -->
               <tr onmouseout="sparsediff_stop()" onmouseover="sparsediff_start()" bgcolor="#ffffd0">
                 <td style="padding:0px 0px 20px 20px;width:25%;vertical-align:middle">
                   <div class="one">
@@ -163,6 +161,8 @@
                   <br>
                   <em>arXiv</em>, 2026
                   <br>
+                  <span class="tag tag-gen">Generative Modeling</span>
+                  <br>
                   <a href="https://sites.google.com/view/sparsely-supervised-diffusion/home">website</a>
                   /
                   <!-- <a href="PLACEHOLDER_CODE_URL">code</a> -->
@@ -176,6 +176,7 @@
                 </td>
               </tr>
 
+              <!-- 2. Latent-Compressed VAE for Video Diffusion Models (CVPR Findings 2026) -->
               <tr onmouseout="lcvae_stop()" onmouseover="lcvae_start()" bgcolor="#ffffd0">
                 <td style="padding:0px 0px 20px 20px;width:25%;vertical-align:middle">
                   <div class="one">
@@ -207,6 +208,8 @@
                   <br>
                   <em>CVPR Findings</em>, 2026
                   <br>
+                  <span class="tag tag-gen">Generative Modeling</span><span class="tag tag-rep">Representation Learning</span>
+                  <br>
                   <a href="https://1mather.github.io/LC-VAE/">website</a>
                   /
                   <a href="https://github.com/1mather/LC-VAE-code">code</a>
@@ -218,358 +221,8 @@
                   </p>
                 </td>
               </tr>
-            </tbody>
-          </table>
 
-
-          <!-- SECTION 2 -->
-
-          <table
-            style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-            <tbody>
-              <tr>
-                <td style="padding:0px 0px 20px 20px;width:100%;vertical-align:middle">
-                  <h3 id="marl">Multi-agent Reinforcement Learning</h3>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-
-          <table
-            style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-            <tbody>
-
-              <tr onmouseout="currmarl_stop()" onmouseover="currmarl_start()" bgcolor="#ffffd0">
-                <td style="padding:0px 0px 20px 20px;width:25%;vertical-align:middle">
-                  <div class="one">
-                    <!-- <div class="two" id='currmarl_image'> -->
-                    <!-- <video  width=100% height=100% muted autoplay loop> -->
-                    <!-- <source src="images/paper/currmarl/real.mp4" type="video/mp4"> -->
-                    <!-- <source src="images/difsurvey_video.mp4" type="video/mp4"> -->
-                    <!-- Your browser does not support the video tag. -->
-                    <!-- </video></div> -->
-                    <img src='images/paper/currmarl/protoss.png' width=100% height=100%>
-                  </div>
-                  <script type="text/javascript">
-                    function currmarl_start() {
-                      document.getElementById('currmarl_image').style.opacity = "1";
-                    }
-
-                    function currmarl_stop() {
-                      document.getElementById('currmarl_image').style.opacity = "0";
-                    }
-                    currmarl_stop()
-                  </script>
-                </td>
-                <td style="padding:0px 0px 20px 20px;width:75%;vertical-align:middle">
-                  <a href="https://arxiv.org/pdf/2205.10016.pdf">
-                    <span class="papertitle">Learning Progress Driven Multi-Agent Curriculum</span>
-                  </a>
-                  <br>
-                  <strong>Wenshuai Zhao</strong>,
-                  <a href="https://lizhyun.github.io/">Zhiyuan Li</a>,
-                  <a href="https://www.aalto.fi/fi/ihmiset/joni-pajarinen">Joni Pajarinen</a>
-                  <br>
-                  <em>ICML</em>, 2025
-                  <br>
-                  <!-- <a href="https://github.com/TIERS/partially-observable-marl">code</a> -->
-                  <a href="https://wenshuaizhao.github.io/spmarl/">website</a>
-                  /
-                  <a href="https://github.com/wenshuaizhao/spmarl">code</a>
-                  /
-                  <a href="https://arxiv.org/pdf/2205.10016.pdf">arXiv</a>
-                  <p></p>
-                  <p>
-                    We show two flaws in existing reward based curriculum learning algorithms when generating number of
-                    agents as curriculum in MARL.
-                    Instead, we propose a learning progress metric as a new optimization objective which generates
-                    curriculum maximizing the learning progress of agents.
-                  </p>
-                </td>
-              </tr>
-
-              <tr onmouseout="bpta_stop()" onmouseover="bpta_start()">
-                <td style="padding:0px 0px 20px 20px;width:25%;vertical-align:middle">
-                  <div class="one">
-                    <div class="two" id='agentmixer_image'>
-                      <video width=100% height=100% muted autoplay loop>
-                        <source src="images/paper/agentmixer/agentmixer1.png" type="video/mp4">
-                        Your browser does not support the video tag.
-                      </video>
-                    </div>
-                    <img src='images/paper/agentmixer/agentmixer1.png' width=100% height=100%>
-                  </div>
-                  <script type="text/javascript">
-                    function bpta_start() {
-                      document.getElementById('agentmixer_image').style.opacity = "1";
-                    }
-
-                    function bpta_stop() {
-                      document.getElementById('agentmixer_image').style.opacity = "0";
-                    }
-                    bpta_stop()
-                  </script>
-                </td>
-                <td style="padding:0px 0px 20px 20px;width:75%;vertical-align:middle">
-                  <a href="https://arxiv.org/pdf/2401.08728.pdf">
-                    <span class="papertitle">AgentMixer: Multi-Agent Correlated Policy Factorization</span>
-                  </a>
-                  <br>
-                  <a href="https://lizhyun.github.io/">Zhiyuan Li</a>,
-                  <strong>Wenshuai Zhao</strong>,
-                  Lijun Wu,
-                  <a href="https://www.aalto.fi/fi/ihmiset/joni-pajarinen">Joni Pajarinen</a>
-
-                  <br>
-                  <em>AAAI</em>, 2025
-                  <br>
-                  code
-                  /
-                  <a href="https://arxiv.org/pdf/2401.08728.pdf">arXiv</a>
-                  <p></p>
-                  <p>
-                    We propose multi-agent correlated policy factorization under CTDE, in order to overcome the
-                    asymmetric learning failure when naively distill individual policies from a joint policy.
-                  </p>
-                </td>
-              </tr>
-
-              <tr onmouseout="camp_stop()" onmouseover="camp_start()" bgcolor="#ffffd0">
-                <td style="padding:0px 0px 20px 20px;width:25%;vertical-align:middle">
-                  <div class="one">
-                    <div class="two" id='optimappo_image'>
-                      <video width=100% height=100% muted autoplay loop>
-                        <source src="images/paper/optimappo/reward_120.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                      </video>
-                    </div>
-                    <img src='images/paper/optimappo/matrix_game.png' width=100% height=100%>
-                  </div>
-                  <script type="text/javascript">
-                    function camp_start() {
-                      document.getElementById('optimappo_image').style.opacity = "1";
-                    }
-
-                    function camp_stop() {
-                      document.getElementById('optimappo_image').style.opacity = "0";
-                    }
-                    camp_stop()
-                  </script>
-                </td>
-                <td style="padding:0px 0px 20px 20px;width:75%;vertical-align:middle">
-                  <a href="https://arxiv.org/pdf/2311.01953.pdf">
-                    <span class="papertitle">Optimistic Multi-Agent Policy Gradient</span>
-                  </a>
-                  <br>
-                  <strong>Wenshuai Zhao</strong>,
-                  <a href="https://zhaoyi11.github.io/homepage/">Yi Zhao</a>,
-                  <a href="https://lizhyun.github.io/">Zhiyuan Li</a>,
-                  <a href="https://users.aalto.fi/~kannalj1/">Juho Kannala</a>,
-                  <a href="https://www.aalto.fi/fi/ihmiset/joni-pajarinen">Joni Pajarinen</a>
-
-                  <br>
-                  <em>ICML</em>, 2024
-                  <br>
-                  <a href="https://wenshuaizhao.github.io/optimappo/">website</a>
-                  /
-                  <a href="https://github.com/wenshuaizhao/optimappo">code</a>
-                  /
-                  <a href="https://arxiv.org/pdf/2311.01953.pdf">arXiv</a>
-                  <p></p>
-                  <p>
-                    In order to overcome the relative overgeneralization problem in multi agent learning, we propose to
-                    enable optimism in multi-agent policy gradient methods by reshaping advantages.
-                  </p>
-                </td>
-              </tr>
-
-
-              <tr onmouseout="bpta_stop()" onmouseover="bpta_start()">
-                <td style="padding:0px 0px 20px 20px;width:25%;vertical-align:middle">
-                  <div class="one">
-                    <div class="two" id='bpta_image'>
-                      <video width=100% height=100% muted autoplay loop>
-                        <source src="images/paper/bpta/bpta.png" type="video/mp4">
-                        Your browser does not support the video tag.
-                      </video>
-                    </div>
-                    <img src='images/paper/bpta/bpta1.png' width=100% height=100%>
-                  </div>
-                  <script type="text/javascript">
-                    function bpta_start() {
-                      document.getElementById('bpta_image').style.opacity = "1";
-                    }
-
-                    function bpta_stop() {
-                      document.getElementById('bpta_image').style.opacity = "0";
-                    }
-                    bpta_stop()
-                  </script>
-                </td>
-                <td style="padding:0px 0px 20px 20px;width:75%;vertical-align:middle">
-                  <a href="https://arxiv.org/pdf/2401.12574.pdf">
-                    <span class="papertitle">Backpropagation Through Agents</span>
-                  </a>
-                  <br>
-                  <a href="https://lizhyun.github.io/">Zhiyuan Li</a>,
-                  <strong>Wenshuai Zhao</strong>,
-                  Lijun Wu,
-                  <a href="https://www.aalto.fi/fi/ihmiset/joni-pajarinen">Joni Pajarinen</a>
-
-                  <br>
-                  <em>AAAI</em>, 2024
-                  <br>
-                  code
-                  /
-                  <a href="https://arxiv.org/pdf/2401.12574.pdf">arXiv</a>
-                  <p></p>
-                  <p>
-                    We propose to backpropogate the gradients through action chains in auto-regressive based MARL
-                    methods.
-                  </p>
-                </td>
-              </tr>
-
-
-              
-
-
-              
-            </tbody>
-          </table>
-
-          <!-- SECTION 2 -->
-
-          <table
-            style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-            <tbody>
-              <tr>
-                <td style="padding:0px 0px 20px 20px;width:100%;vertical-align:middle">
-                  <h3 id="robot-learning">Robot Learning</h3>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-
-          <table
-            style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-            <tbody>
-              <tr onmouseout="bmi_stop()" onmouseover="bmi_start()" bgcolor="#ffffd0">
-                <td style="padding:0px 0px 20px 20px;width:25%;vertical-align:middle">
-                  <div class="one">
-                    <div class="two" id='bmi_image'><video width=100% height=100% muted autoplay loop>
-                        <source src="images/paper/bmi/bmi.mp4" type="video/mp4">
-                        <!-- <source src="images/difsurvey_video.mp4" type="video/mp4"> -->
-                        Your browser does not support the video tag.
-                      </video></div>
-                    <img src='images/paper/bmi/kick.png' width=100% height=100%>
-                  </div>
-                  <script type="text/javascript">
-                    function bmi_start() {
-                      document.getElementById('bmi_image').style.opacity = "1";
-                    }
-
-                    function bmi_stop() {
-                      document.getElementById('bmi_image').style.opacity = "0";
-                    }
-                    bmi_stop()
-                  </script>
-                </td>
-                <td style="padding:0px 0px 20px 20px;width:75%;vertical-align:middle">
-                  <a href="https://arxiv.org/pdf/2410.01968">
-                    <span class="papertitle">Bi-Level Motion Imitation for Humanoid Robots</span>
-                  </a>
-                  <br>
-                  <strong>Wenshuai Zhao</strong>,
-                  <a href="https://zhaoyi11.github.io/homepage/">Yi Zhao</a>,
-                  <a href="https://www.aalto.fi/fi/ihmiset/joni-pajarinen">Joni Pajarinen</a>,
-                  <a href="https://sites.google.com/view/mmuehlebach">Michael Muehlebach</a>
-                  <br>
-                  <em>CoRL</em>, 2024
-                  <br>
-                  <a href="https://sites.google.com/view/bmi-corl2024">website</a>
-                  /
-                  <a href="https://github.com/wenshuaizhao/bmi">code</a>
-                  /
-                  <a href="https://arxiv.org/pdf/2410.01968">arXiv</a>
-                  <p></p>
-                  <p>
-                    We propose a bi-level optimization framework to address the issue of physically infeasible motion
-                    data in humanoid imitation learning.
-                    The method alternates between optimizing the robot's policy and modifying the reference motions,
-                    while using a latent space regularization to preserve the original motion patterns.
-                  </p>
-                </td>
-              </tr>
-
-              <tr onmouseout="robustmarl_stop()" onmouseover="robustmarl_start()">
-                <td style="padding:0px 0px 20px 20px;width:25%;vertical-align:middle">
-                  <div class="one">
-                    <div class="two" id='robustmarl_image'><video width=100% height=100% muted autoplay loop>
-                        <source src="images/paper/robustmarl/real.mp4" type="video/mp4">
-                        <!-- <source src="images/difsurvey_video.mp4" type="video/mp4"> -->
-                        Your browser does not support the video tag.
-                      </video></div>
-                    <img src='images/paper/robustmarl/render.gif' width=100% height=100%>
-                  </div>
-                  <script type="text/javascript">
-                    function robustmarl_start() {
-                      document.getElementById('robustmarl_image').style.opacity = "1";
-                    }
-
-                    function robustmarl_stop() {
-                      document.getElementById('robustmarl_image').style.opacity = "0";
-                    }
-                    robustmarl_stop()
-                  </script>
-                </td>
-                <td style="padding:0px 0px 20px 20px;width:75%;vertical-align:middle">
-                  <a href="https://arxiv.org/pdf/2309.14792.pdf">
-                    <span class="papertitle">Exploiting Local Observations for Robust Robot Learning</span>
-                  </a>
-                  <br>
-                  <strong>Wenshuai Zhao*</strong>,
-                  Eetu-Aleksi Rantala*,
-                  Sahar Salimpour,
-                  <a href="https://lizhyun.github.io/">Zhiyuan Li</a>,
-                  <a href="https://www.aalto.fi/fi/ihmiset/joni-pajarinen">Joni Pajarinen</a>,
-                  Jorge Pena Queralta
-                  <br>
-                  <em>arXiv</em>, 2025
-                  <br>
-                  <a href="https://github.com/TIERS/partially-observable-marl">code</a>
-                  /
-                  <a href="https://arxiv.org/pdf/2309.14792.pdf">arXiv</a>
-                  <p></p>
-                  <p>
-                    We show that in many multi agent systems where agents are weakly coupled, partial observation can
-                    still enable near-optimal
-                    decision making. Moreover, in a mobile robot manipulator, we show partial observation of agents can
-                    improve robustness to agent failure.
-                  </p>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-
-
-
-          <!-- SECTION 3 -->
-
-          <table
-            style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-            <tbody>
-              <tr>
-                <td style="padding:0px 0px 20px 20px;width:100%;vertical-align:middle">
-                  <h3 id="model-based-rl">Model-based Reinforcement Learning</h3>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-
-          <table
-            style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-            <tbody>
+              <!-- 3. Efficient RL by Guiding World Models with Non-Curated Data (ICLR 2026) -->
               <tr onmouseout="guidewm_stop()" onmouseover="guidewm_start()">
                 <td style="padding:0px 0px 20px 20px;width:25%;vertical-align:middle">
                   <div class="one">
@@ -606,6 +259,8 @@
                   <br>
                   <em>ICLR</em>, 2026
                   <br>
+                  <span class="tag tag-mbrl">Model-based RL</span><span class="tag tag-wm">World Models</span>
+                  <br>
                   <!-- <a href="PLACEHOLDER_WEBSITE_URL">website</a> -->
                    website
                   /
@@ -619,6 +274,311 @@
                 </td>
               </tr>
 
+              <!-- 4. Learning Progress Driven Multi-Agent Curriculum (ICML 2025) -->
+              <tr onmouseout="currmarl_stop()" onmouseover="currmarl_start()" bgcolor="#ffffd0">
+                <td style="padding:0px 0px 20px 20px;width:25%;vertical-align:middle">
+                  <div class="one">
+                    <!-- <div class="two" id='currmarl_image'> -->
+                    <!-- <video  width=100% height=100% muted autoplay loop> -->
+                    <!-- <source src="images/paper/currmarl/real.mp4" type="video/mp4"> -->
+                    <!-- <source src="images/difsurvey_video.mp4" type="video/mp4"> -->
+                    <!-- Your browser does not support the video tag. -->
+                    <!-- </video></div> -->
+                    <img src='images/paper/currmarl/protoss.png' width=100% height=100%>
+                  </div>
+                  <script type="text/javascript">
+                    function currmarl_start() {
+                      document.getElementById('currmarl_image').style.opacity = "1";
+                    }
+
+                    function currmarl_stop() {
+                      document.getElementById('currmarl_image').style.opacity = "0";
+                    }
+                    currmarl_stop()
+                  </script>
+                </td>
+                <td style="padding:0px 0px 20px 20px;width:75%;vertical-align:middle">
+                  <a href="https://arxiv.org/pdf/2205.10016.pdf">
+                    <span class="papertitle">Learning Progress Driven Multi-Agent Curriculum</span>
+                  </a>
+                  <br>
+                  <strong>Wenshuai Zhao</strong>,
+                  <a href="https://lizhyun.github.io/">Zhiyuan Li</a>,
+                  <a href="https://www.aalto.fi/fi/ihmiset/joni-pajarinen">Joni Pajarinen</a>
+                  <br>
+                  <em>ICML</em>, 2025
+                  <br>
+                  <span class="tag tag-marl">Multi-Agent RL</span><span class="tag tag-curr">Curriculum Learning</span>
+                  <br>
+                  <!-- <a href="https://github.com/TIERS/partially-observable-marl">code</a> -->
+                  <a href="https://wenshuaizhao.github.io/spmarl/">website</a>
+                  /
+                  <a href="https://github.com/wenshuaizhao/spmarl">code</a>
+                  /
+                  <a href="https://arxiv.org/pdf/2205.10016.pdf">arXiv</a>
+                  <p></p>
+                  <p>
+                    We show two flaws in existing reward based curriculum learning algorithms when generating number of
+                    agents as curriculum in MARL.
+                    Instead, we propose a learning progress metric as a new optimization objective which generates
+                    curriculum maximizing the learning progress of agents.
+                  </p>
+                </td>
+              </tr>
+
+              <!-- 5. Exploiting Local Observations for Robust Robot Learning (arXiv 2025) -->
+              <tr onmouseout="robustmarl_stop()" onmouseover="robustmarl_start()">
+                <td style="padding:0px 0px 20px 20px;width:25%;vertical-align:middle">
+                  <div class="one">
+                    <div class="two" id='robustmarl_image'><video width=100% height=100% muted autoplay loop>
+                        <source src="images/paper/robustmarl/real.mp4" type="video/mp4">
+                        <!-- <source src="images/difsurvey_video.mp4" type="video/mp4"> -->
+                        Your browser does not support the video tag.
+                      </video></div>
+                    <img src='images/paper/robustmarl/render.gif' width=100% height=100%>
+                  </div>
+                  <script type="text/javascript">
+                    function robustmarl_start() {
+                      document.getElementById('robustmarl_image').style.opacity = "1";
+                    }
+
+                    function robustmarl_stop() {
+                      document.getElementById('robustmarl_image').style.opacity = "0";
+                    }
+                    robustmarl_stop()
+                  </script>
+                </td>
+                <td style="padding:0px 0px 20px 20px;width:75%;vertical-align:middle">
+                  <a href="https://arxiv.org/pdf/2309.14792.pdf">
+                    <span class="papertitle">Exploiting Local Observations for Robust Robot Learning</span>
+                  </a>
+                  <br>
+                  <strong>Wenshuai Zhao*</strong>,
+                  Eetu-Aleksi Rantala*,
+                  Sahar Salimpour,
+                  <a href="https://lizhyun.github.io/">Zhiyuan Li</a>,
+                  <a href="https://www.aalto.fi/fi/ihmiset/joni-pajarinen">Joni Pajarinen</a>,
+                  Jorge Pena Queralta
+                  <br>
+                  <em>arXiv</em>, 2025
+                  <br>
+                  <span class="tag tag-marl">Multi-Agent RL</span><span class="tag tag-robot">Robot Learning</span>
+                  <br>
+                  <a href="https://github.com/TIERS/partially-observable-marl">code</a>
+                  /
+                  <a href="https://arxiv.org/pdf/2309.14792.pdf">arXiv</a>
+                  <p></p>
+                  <p>
+                    We show that in many multi agent systems where agents are weakly coupled, partial observation can
+                    still enable near-optimal
+                    decision making. Moreover, in a mobile robot manipulator, we show partial observation of agents can
+                    improve robustness to agent failure.
+                  </p>
+                </td>
+              </tr>
+
+              <!-- 6. AgentMixer: Multi-Agent Correlated Policy Factorization (AAAI 2025) -->
+              <tr onmouseout="bpta_stop()" onmouseover="bpta_start()">
+                <td style="padding:0px 0px 20px 20px;width:25%;vertical-align:middle">
+                  <div class="one">
+                    <div class="two" id='agentmixer_image'>
+                      <video width=100% height=100% muted autoplay loop>
+                        <source src="images/paper/agentmixer/agentmixer1.png" type="video/mp4">
+                        Your browser does not support the video tag.
+                      </video>
+                    </div>
+                    <img src='images/paper/agentmixer/agentmixer1.png' width=100% height=100%>
+                  </div>
+                  <script type="text/javascript">
+                    function bpta_start() {
+                      document.getElementById('agentmixer_image').style.opacity = "1";
+                    }
+
+                    function bpta_stop() {
+                      document.getElementById('agentmixer_image').style.opacity = "0";
+                    }
+                    bpta_stop()
+                  </script>
+                </td>
+                <td style="padding:0px 0px 20px 20px;width:75%;vertical-align:middle">
+                  <a href="https://arxiv.org/pdf/2401.08728.pdf">
+                    <span class="papertitle">AgentMixer: Multi-Agent Correlated Policy Factorization</span>
+                  </a>
+                  <br>
+                  <a href="https://lizhyun.github.io/">Zhiyuan Li</a>,
+                  <strong>Wenshuai Zhao</strong>,
+                  Lijun Wu,
+                  <a href="https://www.aalto.fi/fi/ihmiset/joni-pajarinen">Joni Pajarinen</a>
+
+                  <br>
+                  <em>AAAI</em>, 2025
+                  <br>
+                  <span class="tag tag-marl">Multi-Agent RL</span>
+                  <br>
+                  code
+                  /
+                  <a href="https://arxiv.org/pdf/2401.08728.pdf">arXiv</a>
+                  <p></p>
+                  <p>
+                    We propose multi-agent correlated policy factorization under CTDE, in order to overcome the
+                    asymmetric learning failure when naively distill individual policies from a joint policy.
+                  </p>
+                </td>
+              </tr>
+
+              <!-- 7. Bi-Level Motion Imitation for Humanoid Robots (CoRL 2024) -->
+              <tr onmouseout="bmi_stop()" onmouseover="bmi_start()" bgcolor="#ffffd0">
+                <td style="padding:0px 0px 20px 20px;width:25%;vertical-align:middle">
+                  <div class="one">
+                    <div class="two" id='bmi_image'><video width=100% height=100% muted autoplay loop>
+                        <source src="images/paper/bmi/bmi.mp4" type="video/mp4">
+                        <!-- <source src="images/difsurvey_video.mp4" type="video/mp4"> -->
+                        Your browser does not support the video tag.
+                      </video></div>
+                    <img src='images/paper/bmi/kick.png' width=100% height=100%>
+                  </div>
+                  <script type="text/javascript">
+                    function bmi_start() {
+                      document.getElementById('bmi_image').style.opacity = "1";
+                    }
+
+                    function bmi_stop() {
+                      document.getElementById('bmi_image').style.opacity = "0";
+                    }
+                    bmi_stop()
+                  </script>
+                </td>
+                <td style="padding:0px 0px 20px 20px;width:75%;vertical-align:middle">
+                  <a href="https://arxiv.org/pdf/2410.01968">
+                    <span class="papertitle">Bi-Level Motion Imitation for Humanoid Robots</span>
+                  </a>
+                  <br>
+                  <strong>Wenshuai Zhao</strong>,
+                  <a href="https://zhaoyi11.github.io/homepage/">Yi Zhao</a>,
+                  <a href="https://www.aalto.fi/fi/ihmiset/joni-pajarinen">Joni Pajarinen</a>,
+                  <a href="https://sites.google.com/view/mmuehlebach">Michael Muehlebach</a>
+                  <br>
+                  <em>CoRL</em>, 2024
+                  <br>
+                  <span class="tag tag-robot">Robot Learning</span><span class="tag tag-il">Imitation Learning</span>
+                  <br>
+                  <a href="https://sites.google.com/view/bmi-corl2024">website</a>
+                  /
+                  <a href="https://github.com/wenshuaizhao/bmi">code</a>
+                  /
+                  <a href="https://arxiv.org/pdf/2410.01968">arXiv</a>
+                  <p></p>
+                  <p>
+                    We propose a bi-level optimization framework to address the issue of physically infeasible motion
+                    data in humanoid imitation learning.
+                    The method alternates between optimizing the robot's policy and modifying the reference motions,
+                    while using a latent space regularization to preserve the original motion patterns.
+                  </p>
+                </td>
+              </tr>
+
+              <!-- 8. Optimistic Multi-Agent Policy Gradient (ICML 2024) -->
+              <tr onmouseout="camp_stop()" onmouseover="camp_start()" bgcolor="#ffffd0">
+                <td style="padding:0px 0px 20px 20px;width:25%;vertical-align:middle">
+                  <div class="one">
+                    <div class="two" id='optimappo_image'>
+                      <video width=100% height=100% muted autoplay loop>
+                        <source src="images/paper/optimappo/reward_120.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                      </video>
+                    </div>
+                    <img src='images/paper/optimappo/matrix_game.png' width=100% height=100%>
+                  </div>
+                  <script type="text/javascript">
+                    function camp_start() {
+                      document.getElementById('optimappo_image').style.opacity = "1";
+                    }
+
+                    function camp_stop() {
+                      document.getElementById('optimappo_image').style.opacity = "0";
+                    }
+                    camp_stop()
+                  </script>
+                </td>
+                <td style="padding:0px 0px 20px 20px;width:75%;vertical-align:middle">
+                  <a href="https://arxiv.org/pdf/2311.01953.pdf">
+                    <span class="papertitle">Optimistic Multi-Agent Policy Gradient</span>
+                  </a>
+                  <br>
+                  <strong>Wenshuai Zhao</strong>,
+                  <a href="https://zhaoyi11.github.io/homepage/">Yi Zhao</a>,
+                  <a href="https://lizhyun.github.io/">Zhiyuan Li</a>,
+                  <a href="https://users.aalto.fi/~kannalj1/">Juho Kannala</a>,
+                  <a href="https://www.aalto.fi/fi/ihmiset/joni-pajarinen">Joni Pajarinen</a>
+
+                  <br>
+                  <em>ICML</em>, 2024
+                  <br>
+                  <span class="tag tag-marl">Multi-Agent RL</span>
+                  <br>
+                  <a href="https://wenshuaizhao.github.io/optimappo/">website</a>
+                  /
+                  <a href="https://github.com/wenshuaizhao/optimappo">code</a>
+                  /
+                  <a href="https://arxiv.org/pdf/2311.01953.pdf">arXiv</a>
+                  <p></p>
+                  <p>
+                    In order to overcome the relative overgeneralization problem in multi agent learning, we propose to
+                    enable optimism in multi-agent policy gradient methods by reshaping advantages.
+                  </p>
+                </td>
+              </tr>
+
+              <!-- 9. Backpropagation Through Agents (AAAI 2024) -->
+              <tr onmouseout="bpta_stop()" onmouseover="bpta_start()">
+                <td style="padding:0px 0px 20px 20px;width:25%;vertical-align:middle">
+                  <div class="one">
+                    <div class="two" id='bpta_image'>
+                      <video width=100% height=100% muted autoplay loop>
+                        <source src="images/paper/bpta/bpta.png" type="video/mp4">
+                        Your browser does not support the video tag.
+                      </video>
+                    </div>
+                    <img src='images/paper/bpta/bpta1.png' width=100% height=100%>
+                  </div>
+                  <script type="text/javascript">
+                    function bpta_start() {
+                      document.getElementById('bpta_image').style.opacity = "1";
+                    }
+
+                    function bpta_stop() {
+                      document.getElementById('bpta_image').style.opacity = "0";
+                    }
+                    bpta_stop()
+                  </script>
+                </td>
+                <td style="padding:0px 0px 20px 20px;width:75%;vertical-align:middle">
+                  <a href="https://arxiv.org/pdf/2401.12574.pdf">
+                    <span class="papertitle">Backpropagation Through Agents</span>
+                  </a>
+                  <br>
+                  <a href="https://lizhyun.github.io/">Zhiyuan Li</a>,
+                  <strong>Wenshuai Zhao</strong>,
+                  Lijun Wu,
+                  <a href="https://www.aalto.fi/fi/ihmiset/joni-pajarinen">Joni Pajarinen</a>
+
+                  <br>
+                  <em>AAAI</em>, 2024
+                  <br>
+                  <span class="tag tag-marl">Multi-Agent RL</span>
+                  <br>
+                  code
+                  /
+                  <a href="https://arxiv.org/pdf/2401.12574.pdf">arXiv</a>
+                  <p></p>
+                  <p>
+                    We propose to backpropogate the gradients through action chains in auto-regressive based MARL
+                    methods.
+                  </p>
+                </td>
+              </tr>
+
+              <!-- 10. Simplified Temporal Consistency Reinforcement Learning (ICML 2023) -->
               <tr onmouseout="currmarl_stop()" onmouseover="currmarl_start()">
                 <td style="padding:0px 0px 20px 20px;width:25%;vertical-align:middle">
                   <div class="one">
@@ -654,6 +614,8 @@
                   <br>
                   <em>ICML</em>, 2023
                   <br>
+                  <span class="tag tag-mbrl">Model-based RL</span>
+                  <br>
                   <a href="https://github.com/zhaoyi11/tcrl">code</a>
                   /
                   <a href="https://arxiv.org/pdf/2306.09466.pdf">arXiv</a>
@@ -665,6 +627,7 @@
                   </p>
                 </td>
               </tr>
+
             </tbody>
           </table>
 
